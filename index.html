@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="bookList.js"></script>
+    <script src="bookList.test.js"></script>
+    <script src="helper.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Book Finder</h1>
+    <p></p>
+    <input id="search-bar" type="text" placeholder="Search for books by tags">
+    <button class="btn" id="search-btn">Search</button>
+    <div display='flex' flex-wrap='wrap' id="bookList">
+      
+
+    </div>
+    <style>
+      body{
+        font-family: sans-serif;
+        background-color: white;
+      }
+      #bookList{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      p{
+        width:80%;
+      }
+    </style>
+    <p>
+      Program Description:
+      <br>
+      This program is a simple book search application that allows users to search for books based on their tags or other properties.
+      <br>
+      When the user enters a search term and clicks the search button, the program filters the available books and displays the matching books on the page.
+      <br><br>
+      To run the program, follow these steps:
+      <br>
+    
+      Enter a search term in the input field. You can try various search terms based on the book tags or other properties. For example:
+      <br>
+
+      <br>  fiction
+      <br>  nonfiction
+      <br>  science fiction
+      <br>  memoir
+      <br>  sociology
+      <br>  anthropology
+      <br>  fantasy
+      <br>  classic
+      <br>  adventure
+      <br>
+      or book title or author name.
+      <br><br><br><br>
+      <br>
+      The program consists of several JavaScript files:
+      <br>
+      
+      bookList.js: This file contains an array of book objects, each with properties like title, author, and tags.
+      <br>
+      helper.js: This file contains helper functions for flattening object values into an array, structuring book objects as HTML elements, and rendering the book elements to the DOM.
+      <br>
+      script.js: This file contains the main logic of the program, including functions for capturing the search value, filtering books based on the search input, formatting the filtered books as HTML elements, and handling the search button click event.
+      <br>
+      Instructions:
+      <br>
+
+    </p>
+    belongs to: Volodymyr Korol 
+  </body>
+</html>
